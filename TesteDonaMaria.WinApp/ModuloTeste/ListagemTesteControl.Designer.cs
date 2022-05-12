@@ -28,32 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listTestes = new System.Windows.Forms.ListBox();
+            this.grid = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
             // 
-            // listTestes
+            // grid
             // 
-            this.listTestes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listTestes.FormattingEnabled = true;
-            this.listTestes.ItemHeight = 15;
-            this.listTestes.Location = new System.Drawing.Point(0, 0);
-            this.listTestes.Name = "listTestes";
-            this.listTestes.Size = new System.Drawing.Size(429, 305);
-            this.listTestes.TabIndex = 0;
+            this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grid.Location = new System.Drawing.Point(0, 0);
+            this.grid.Name = "grid";
+            this.grid.RowTemplate.Height = 25;
+            this.grid.Size = new System.Drawing.Size(429, 305);
+            this.grid.TabIndex = 0;
             // 
             // ListagemTesteControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.listTestes);
+            this.Controls.Add(this.grid);
             this.Name = "ListagemTesteControl";
             this.Size = new System.Drawing.Size(429, 305);
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox listTestes;
+        private System.Windows.Forms.DataGridView grid;
     }
 }

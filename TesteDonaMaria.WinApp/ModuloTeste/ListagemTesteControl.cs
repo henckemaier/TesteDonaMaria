@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TesteDonaMaria.Dominio.ModuloTeste;
+using TesteDonaMaria.WinApp.Compartilhado;
 
 namespace TesteDonaMaria.WinApp.ModuloTeste
 {
@@ -16,21 +17,36 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
         public ListagemTesteControl()
         {
             InitializeComponent();
+            grid.ConfigurarGridZebrado();
+            grid.ConfigurarGridSomenteLeitura();
+            grid.Columns.AddRange(ObterColunas());
+        }
+
+        private DataGridViewColumn[] ObterColunas()
+        {
+            var colunas = new DataGridViewColumn[]
+            {
+                new DataGridViewTextBoxColumn { DataPropertyName = "Numero", HeaderText = "ID"},
+                new DataGridViewTextBoxColumn { DataPropertyName = "Materia", HeaderText = "Disciplina, Matéria, Série"},
+                new DataGridViewTextBoxColumn { DataPropertyName = "NumQuestoes", HeaderText = "Nº de questões"},
+                new DataGridViewTextBoxColumn { DataPropertyName = "DataCriacao", HeaderText = "Data"}
+            };
+            return colunas;
         }
 
         internal void AtualizarRegistros(List<Teste> testes)
         {
-            listTestes.Items.Clear();
+            grid.Rows.Clear();
 
             foreach (Teste teste in testes)
             {
-                listTestes.Items.Add(teste);
+                grid.Rows.Add(teste.Numero, teste.Materia, teste.NumQuestoes, teste.DataCriacao);
             }
         }
 
-        internal Teste SelecionarTeste()
+        internal int ObtemNumeroTesteSelecionado()
         {
-            return (Teste)listTestes.SelectedItem;
+            return grid.SelecionarNumero<int>();
         }
     }
 }

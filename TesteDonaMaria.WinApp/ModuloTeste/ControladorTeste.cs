@@ -26,6 +26,7 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
 
         public override void Inserir()
         {
+
             var materias = repositorioMateria.SelecionarTodos();
 
             TelaCadastroTesteForm tela = new TelaCadastroTesteForm(materias);
@@ -42,7 +43,7 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
         }
         public override void Editar()
         {
-            Teste testeSelecionado = listagemTestes.SelecionarTeste();
+            Teste testeSelecionado = ObtemTesteSelecionado();
 
             if (testeSelecionado == null)
             {
@@ -66,17 +67,9 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
                 CarregarTestes();
             }
         }
-
-        private void CarregarTestes()
-        {
-            List<Teste> testes = repositorioTeste.SelecionarTodos();
-
-            listagemTestes.AtualizarRegistros(testes);
-        }
-
         public override void Excluir()
         {
-            Teste testeSelecionado = listagemTestes.SelecionarTeste();
+            Teste testeSelecionado = ObtemTesteSelecionado();
 
             if (testeSelecionado == null)
             {
@@ -109,5 +102,21 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
 
             return listagemTestes;
         }
+
+        private Teste ObtemTesteSelecionado()
+        {
+            int numeroSelecionado = listagemTestes.ObtemNumeroTesteSelecionado();
+
+            Teste testeSelecionado = repositorioTeste.SelecionarPorNumero(numeroSelecionado);
+            return testeSelecionado;
+        }
+
+        private void CarregarTestes()
+        {
+            List<Teste> testes = repositorioTeste.SelecionarTodos();
+
+            listagemTestes.AtualizarRegistros(testes);
+        }
+
     }
 }

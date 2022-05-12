@@ -183,7 +183,7 @@
             // panelRegistros
             // 
             this.panelRegistros.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRegistros.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.panelRegistros.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panelRegistros.Location = new System.Drawing.Point(0, 71);
             this.panelRegistros.Name = "panelRegistros";
             this.panelRegistros.Size = new System.Drawing.Size(839, 404);
