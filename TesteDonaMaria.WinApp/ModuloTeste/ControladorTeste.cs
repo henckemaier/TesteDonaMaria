@@ -76,7 +76,23 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
 
         public override void Excluir()
         {
-            throw new NotImplementedException();
+            Teste testeSelecionado = listagemTestes.SelecionarTeste();
+
+            if (testeSelecionado == null)
+            {
+                MessageBox.Show("Selecione um Teste primeiro",
+                "Exclusão de Compromissos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            DialogResult resultado = MessageBox.Show("Deseja realmente excluir o Teste?",
+                "Exclusão de Teste", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.OK)
+            {
+                repositorioTeste.Excluir(testeSelecionado);
+                CarregarTestes();
+            }
         }
 
         public override ConfiguracaoToolboxBase ObtemConfiguracaoToolbox()

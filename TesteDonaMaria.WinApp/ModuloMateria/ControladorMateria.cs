@@ -61,7 +61,23 @@ namespace TesteDonaMaria.WinApp.ModuloMateria
 
         public override void Excluir()
         {
-            throw new NotImplementedException();
+            Materia materiaSelecionada = listagemMaterias.SelecionarMateria();
+
+            if (materiaSelecionada == null)
+            {
+                MessageBox.Show("Selecione uma Matéria primeiro",
+                "Exclusão de Matéria", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            DialogResult resultado = MessageBox.Show("Deseja realmente excluir a Matéria?",
+                "Exclusão de Matéria", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.OK)
+            {
+                repositorioMateria.Excluir(materiaSelecionada);
+                CarregarMaterias();
+            }
         }
 
         private void CarregarMaterias()

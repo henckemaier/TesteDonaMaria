@@ -50,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 56);
+            this.label2.Location = new System.Drawing.Point(232, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 15);
             this.label2.TabIndex = 1;
@@ -66,7 +66,7 @@
             // 
             // txtNumQuestoes
             // 
-            this.txtNumQuestoes.Location = new System.Drawing.Point(138, 53);
+            this.txtNumQuestoes.Location = new System.Drawing.Point(358, 24);
             this.txtNumQuestoes.Name = "txtNumQuestoes";
             this.txtNumQuestoes.Size = new System.Drawing.Size(61, 23);
             this.txtNumQuestoes.TabIndex = 3;
@@ -74,7 +74,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(358, 150);
+            this.btnCancelar.Location = new System.Drawing.Point(494, 92);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(72, 39);
             this.btnCancelar.TabIndex = 8;
@@ -85,7 +85,7 @@
             // btnGravar
             // 
             this.btnGravar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnGravar.Location = new System.Drawing.Point(280, 150);
+            this.btnGravar.Location = new System.Drawing.Point(416, 92);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(72, 39);
             this.btnGravar.TabIndex = 7;
@@ -96,7 +96,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 84);
+            this.label4.Location = new System.Drawing.Point(12, 56);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 15);
             this.label4.TabIndex = 9;
@@ -106,16 +106,16 @@
             // 
             this.cmbMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMateria.FormattingEnabled = true;
-            this.cmbMateria.Location = new System.Drawing.Point(138, 81);
+            this.cmbMateria.Location = new System.Drawing.Point(138, 53);
             this.cmbMateria.Name = "cmbMateria";
-            this.cmbMateria.Size = new System.Drawing.Size(355, 23);
+            this.cmbMateria.Size = new System.Drawing.Size(428, 23);
             this.cmbMateria.TabIndex = 11;
             // 
             // TelaCadastroTesteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(505, 201);
+            this.ClientSize = new System.Drawing.Size(578, 143);
             this.Controls.Add(this.cmbMateria);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCancelar);

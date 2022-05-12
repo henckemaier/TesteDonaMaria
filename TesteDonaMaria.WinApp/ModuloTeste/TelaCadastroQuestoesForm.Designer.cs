@@ -95,7 +95,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(335, 371);
+            this.btnCancelar.Location = new System.Drawing.Point(335, 394);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(72, 39);
             this.btnCancelar.TabIndex = 17;
@@ -105,7 +105,7 @@
             // btnGravar
             // 
             this.btnGravar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnGravar.Location = new System.Drawing.Point(256, 371);
+            this.btnGravar.Location = new System.Drawing.Point(256, 394);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(72, 39);
             this.btnGravar.TabIndex = 16;
@@ -126,7 +126,7 @@
             // 
             this.listBoxQuestoes.FormattingEnabled = true;
             this.listBoxQuestoes.ItemHeight = 15;
-            this.listBoxQuestoes.Location = new System.Drawing.Point(13, 226);
+            this.listBoxQuestoes.Location = new System.Drawing.Point(13, 249);
             this.listBoxQuestoes.Name = "listBoxQuestoes";
             this.listBoxQuestoes.Size = new System.Drawing.Size(394, 139);
             this.listBoxQuestoes.TabIndex = 19;
