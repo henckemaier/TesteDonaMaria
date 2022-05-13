@@ -111,10 +111,10 @@
             this.btnGravar.TabIndex = 16;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnAdicionar.Location = new System.Drawing.Point(334, 194);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(72, 31);
@@ -131,6 +131,7 @@
             this.listQuestoes.Name = "listQuestoes";
             this.listQuestoes.Size = new System.Drawing.Size(394, 139);
             this.listQuestoes.TabIndex = 19;
+            this.listQuestoes.SelectedIndexChanged += new System.EventHandler(this.listQuestoes_SelectedIndexChanged);
             // 
             // TelaCadastroQuestoesForm
             // 
@@ -148,6 +149,7 @@
             this.Controls.Add(this.cmbBimestre);
             this.Controls.Add(this.label1);
             this.Name = "TelaCadastroQuestoesForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaCadastroQuestoesForm";
             this.ResumeLayout(false);
             this.PerformLayout();

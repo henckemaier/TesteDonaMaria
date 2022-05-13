@@ -63,6 +63,7 @@ namespace TesteDonaMaria.WinApp.ModuloMateria
 
                 txtNumero.Text = materia.Numero.ToString();
                 txtNomeMateria.Text = materia.NomeMateria;
+                cmbDisciplinas.SelectedItem = materia.Disciplina;
                 cmbSerieMateria.SelectedItem = materia.Serie;
             }
         }
@@ -70,6 +71,7 @@ namespace TesteDonaMaria.WinApp.ModuloMateria
         private void btnGravar_Click(object sender, EventArgs e)
         {
             materia.NomeMateria = txtNomeMateria.Text;
+            materia.Disciplina = (MateriaDisciplinaEnum)cmbDisciplinas.SelectedItem;
             materia.Serie = (SerieMateriaEnum)cmbSerieMateria.SelectedItem;
 
             ValidationResult resultadoValidacao = GravarRegistro(materia);

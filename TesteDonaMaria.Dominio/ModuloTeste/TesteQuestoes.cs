@@ -16,7 +16,7 @@ namespace TesteDonaMaria.Dominio.ModuloTeste
 
         public override string ToString()
         {
-            return Pergunta;
+            return $"Pergunta: {Pergunta} | Gabarito: {Gabarito} | Bimestre: {Bimestre}";
         }
     }
 }

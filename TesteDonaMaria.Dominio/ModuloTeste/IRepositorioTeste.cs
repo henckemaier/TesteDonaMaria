@@ -11,5 +11,7 @@ namespace TesteDonaMaria.Dominio.ModuloTeste
     {
         void AdicionarQuestoes(Teste testeSelecionado, List<TesteQuestoes> itens);
 
+        //void Duplicar(Teste testeSelecionado, List<Teste> itens);
+
     }
 }

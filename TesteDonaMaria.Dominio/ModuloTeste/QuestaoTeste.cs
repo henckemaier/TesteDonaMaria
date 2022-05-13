@@ -11,12 +11,6 @@ namespace TesteDonaMaria.Dominio.ModuloTeste
         public BimestreTesteEnum Bimestre { get; set; }
         public string Pergunta { get; set; }
         public string Gabarito { get; set; }
-        public bool Concluido { get; set; }
-
-        public void Concluir()
-        {
-            Concluido = true;
-        }
     }
 
 }

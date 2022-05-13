@@ -65,5 +65,15 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
                 listQuestoes.Items.Add(testeQuestoes);
             }
         }
+
+        private void listQuestoes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGravar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

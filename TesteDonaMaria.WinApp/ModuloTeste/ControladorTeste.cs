@@ -107,6 +107,33 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
 
                 repositorioTeste.AdicionarQuestoes(testeSelecionado, itens);
 
+                CarregarTestes();               
+            }
+        }
+
+        public override void Duplicar()
+        {
+            Teste testeSelecionado = ObtemTesteSelecionado();
+
+            if (testeSelecionado == null)
+            {
+                MessageBox.Show("Selecione um Teste primeiro",
+                "Duplicação de Teste", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            var materias = repositorioMateria.SelecionarTodos();
+
+            TelaCadastroTesteForm tela = new TelaCadastroTesteForm(materias);
+
+            tela.Teste = testeSelecionado;
+
+            tela.GravarRegistro = repositorioTeste.Inserir;
+
+            DialogResult resultado = tela.ShowDialog();
+
+            if (resultado == DialogResult.OK)
+            {
                 CarregarTestes();
             }
         }
