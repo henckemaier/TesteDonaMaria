@@ -126,7 +126,7 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
 
             TelaCadastroTesteForm tela = new TelaCadastroTesteForm(materias);
 
-            tela.Teste = testeSelecionado;
+            tela.Teste = testeSelecionado.Clone(); //Clonar o objeto
 
             tela.GravarRegistro = repositorioTeste.Inserir;
 

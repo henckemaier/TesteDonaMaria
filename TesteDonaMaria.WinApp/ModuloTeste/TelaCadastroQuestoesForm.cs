@@ -56,6 +56,8 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
             {
                 TesteQuestoes testeQuestoes = new TesteQuestoes();
 
+                testeQuestoes.Letra = txtLetra.Text;
+
                 testeQuestoes.Bimestre = (BimestreTesteEnum)cmbBimestre.SelectedItem;
 
                 testeQuestoes.Pergunta = txtPergunta.Text;

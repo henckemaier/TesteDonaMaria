@@ -14,9 +14,11 @@ namespace TesteDonaMaria.Dominio.ModuloTeste
 
         public string Gabarito { get; set; }
 
+        public string Letra { get; set; }
+
         public override string ToString()
         {
-            return $"Pergunta: {Pergunta} | Gabarito: {Gabarito} | Bimestre: {Bimestre}";
+            return $"{Letra}) Pergunta: {Pergunta} | Gabarito: {Gabarito} | Bimestre: {Bimestre}";
         }
     }
 }

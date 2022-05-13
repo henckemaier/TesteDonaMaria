@@ -45,5 +45,10 @@ namespace TesteDonaMaria.Dominio.ModuloTeste
         {
             
         }
+
+        public Teste Clone()
+        {
+            return MemberwiseClone() as Teste;  
+        }
     }
 }
