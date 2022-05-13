@@ -87,9 +87,21 @@ namespace TesteDonaMaria.WinApp
             controlador.Excluir();
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void btnAdicionarQuestao_Click(object sender, EventArgs e)
         {
-
+            controlador.AdicionarQuestao();
+        }
+        private void btnAtualizarQuestao_Click(object sender, EventArgs e)
+        {
+            controlador.AtualizarQuestao();
+        }
+        private void btnDuplicar_Click(object sender, EventArgs e)
+        {
+            controlador.Duplicar();
+        }
+        private void btnPdf_Click(object sender, EventArgs e)
+        {
+            controlador.GerarPdf();
         }
 
         private void ConfigurarTelaPrincipal(ToolStripMenuItem opcaoSelecionada)
@@ -137,8 +149,10 @@ namespace TesteDonaMaria.WinApp
             btnInserir.Enabled = configuracao.InserirHabilitado;
             btnEditar.Enabled = configuracao.EditarHabilitado;
             btnExcluir.Enabled = configuracao.ExcluirHabilitado;
-            btnAdicionarItens.Enabled = configuracao.AdicionarItensHabilitado;
-            btnAtualizarItens.Enabled = configuracao.AtualizarItensHabilitado;
+            btnAdicionarQuestao.Enabled = configuracao.AdicionarItensHabilitado;
+            btnAtualizarQuestao.Enabled = configuracao.AtualizarItensHabilitado;
+            btnDuplicar.Enabled = configuracao.DuplicarHabilitado;
+            btnPdf.Enabled = configuracao.PdfHabilitado;
         }
 
         private void ConfigurarTooltips(ConfiguracaoToolboxBase configuracao)
@@ -146,8 +160,11 @@ namespace TesteDonaMaria.WinApp
             btnInserir.ToolTipText = configuracao.TooltipInserir;
             btnEditar.ToolTipText = configuracao.TooltipEditar;
             btnExcluir.ToolTipText = configuracao.TooltipExcluir;
-            btnAdicionarItens.ToolTipText = configuracao.TooltipAdicionarItens;
-            btnAtualizarItens.ToolTipText = configuracao.TooltipAtualizarItens;
+            btnAdicionarQuestao.ToolTipText = configuracao.TooltipAdicionarItens;
+            btnAtualizarQuestao.ToolTipText = configuracao.TooltipAtualizarItens;
+            btnDuplicar.ToolTipText = configuracao.TooltipDuplicar;
+            btnPdf.ToolTipText = configuracao.TooltipPdf;
         }
+
     }
 }

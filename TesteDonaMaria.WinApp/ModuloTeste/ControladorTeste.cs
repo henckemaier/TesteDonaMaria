@@ -88,6 +88,25 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
             }
         }
 
+        public override void AdicionarQuestao()
+        {
+            Teste testeSelecionado = ObtemTesteSelecionado();
+
+            if (testeSelecionado == null)
+            {
+                MessageBox.Show("Selecione um Teste primeiro",
+                "Adição de Questão", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            TelaCadastroQuestoesForm tela = new TelaCadastroQuestoesForm(testeSelecionado);
+
+            if (tela.ShowDialog() == DialogResult.OK)
+            {
+                //terminar
+            }
+        }
+
         public override ConfiguracaoToolboxBase ObtemConfiguracaoToolbox()
         {
             return new ConfiguracaoToolboxTeste();

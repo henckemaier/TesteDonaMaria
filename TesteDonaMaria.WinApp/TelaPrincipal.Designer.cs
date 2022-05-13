@@ -33,10 +33,11 @@
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnAdicionarItens = new System.Windows.Forms.ToolStripButton();
-            this.btnAtualizarItens = new System.Windows.Forms.ToolStripButton();
+            this.btnAdicionarQuestao = new System.Windows.Forms.ToolStripButton();
+            this.btnAtualizarQuestao = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.btnDuplicar = new System.Windows.Forms.ToolStripButton();
+            this.btnPdf = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.labelTipoCadastro = new System.Windows.Forms.ToolStripLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -59,15 +60,16 @@
             this.btnEditar,
             this.btnExcluir,
             this.toolStripSeparator1,
-            this.btnAdicionarItens,
-            this.btnAtualizarItens,
+            this.btnAdicionarQuestao,
+            this.btnAtualizarQuestao,
             this.toolStripSeparator2,
-            this.toolStripButton1,
+            this.btnDuplicar,
+            this.btnPdf,
             this.toolStripSeparator3,
             this.labelTipoCadastro});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(839, 47);
+            this.toolStrip1.Size = new System.Drawing.Size(839, 49);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolbox";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
@@ -80,7 +82,7 @@
             this.btnInserir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Padding = new System.Windows.Forms.Padding(5);
-            this.btnInserir.Size = new System.Drawing.Size(38, 44);
+            this.btnInserir.Size = new System.Drawing.Size(38, 46);
             this.btnInserir.Text = "Inserir";
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
@@ -92,7 +94,7 @@
             this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Padding = new System.Windows.Forms.Padding(5);
-            this.btnEditar.Size = new System.Drawing.Size(38, 44);
+            this.btnEditar.Size = new System.Drawing.Size(38, 46);
             this.btnEditar.Text = "toolStripButton2";
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
@@ -104,64 +106,78 @@
             this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Padding = new System.Windows.Forms.Padding(5);
-            this.btnExcluir.Size = new System.Drawing.Size(38, 44);
+            this.btnExcluir.Size = new System.Drawing.Size(38, 46);
             this.btnExcluir.Text = "toolStripButton1";
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 49);
             // 
-            // btnAdicionarItens
+            // btnAdicionarQuestao
             // 
-            this.btnAdicionarItens.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnAdicionarItens.Image = global::TesteDonaMaria.WinApp.Properties.Resources.outline_list_alt_black_24dp;
-            this.btnAdicionarItens.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnAdicionarItens.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAdicionarItens.Name = "btnAdicionarItens";
-            this.btnAdicionarItens.Padding = new System.Windows.Forms.Padding(5);
-            this.btnAdicionarItens.Size = new System.Drawing.Size(38, 44);
-            this.btnAdicionarItens.Text = "toolStripButton1";
-            this.btnAdicionarItens.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.btnAdicionarQuestao.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnAdicionarQuestao.Image = global::TesteDonaMaria.WinApp.Properties.Resources.outline_list_alt_black_24dp;
+            this.btnAdicionarQuestao.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnAdicionarQuestao.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAdicionarQuestao.Name = "btnAdicionarQuestao";
+            this.btnAdicionarQuestao.Padding = new System.Windows.Forms.Padding(5);
+            this.btnAdicionarQuestao.Size = new System.Drawing.Size(38, 46);
+            this.btnAdicionarQuestao.Text = "toolStripButton1";
+            this.btnAdicionarQuestao.Click += new System.EventHandler(this.btnAdicionarQuestao_Click);
             // 
-            // btnAtualizarItens
+            // btnAtualizarQuestao
             // 
-            this.btnAtualizarItens.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnAtualizarItens.Image = global::TesteDonaMaria.WinApp.Properties.Resources.outline_table_rows_black_24dp;
-            this.btnAtualizarItens.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnAtualizarItens.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAtualizarItens.Name = "btnAtualizarItens";
-            this.btnAtualizarItens.Padding = new System.Windows.Forms.Padding(5);
-            this.btnAtualizarItens.Size = new System.Drawing.Size(38, 44);
-            this.btnAtualizarItens.Text = "toolStripButton2";
+            this.btnAtualizarQuestao.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnAtualizarQuestao.Image = global::TesteDonaMaria.WinApp.Properties.Resources.outline_table_rows_black_24dp;
+            this.btnAtualizarQuestao.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnAtualizarQuestao.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAtualizarQuestao.Name = "btnAtualizarQuestao";
+            this.btnAtualizarQuestao.Padding = new System.Windows.Forms.Padding(5);
+            this.btnAtualizarQuestao.Size = new System.Drawing.Size(38, 46);
+            this.btnAtualizarQuestao.Text = "toolStripButton2";
+            this.btnAtualizarQuestao.Click += new System.EventHandler(this.btnAtualizarQuestao_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 49);
             // 
-            // toolStripButton1
+            // btnDuplicar
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::TesteDonaMaria.WinApp.Properties.Resources.icons8_pdf_30;
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripButton1.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.btnDuplicar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnDuplicar.Image = global::TesteDonaMaria.WinApp.Properties.Resources.icons8_duplicata_32;
+            this.btnDuplicar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnDuplicar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDuplicar.Name = "btnDuplicar";
+            this.btnDuplicar.Padding = new System.Windows.Forms.Padding(5);
+            this.btnDuplicar.Size = new System.Drawing.Size(46, 46);
+            this.btnDuplicar.Text = "toolStripButton2";
+            this.btnDuplicar.Click += new System.EventHandler(this.btnDuplicar_Click);
+            // 
+            // btnPdf
+            // 
+            this.btnPdf.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnPdf.Image = global::TesteDonaMaria.WinApp.Properties.Resources.icons8_pdf_30;
+            this.btnPdf.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnPdf.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnPdf.Name = "btnPdf";
+            this.btnPdf.Padding = new System.Windows.Forms.Padding(5);
+            this.btnPdf.Size = new System.Drawing.Size(44, 46);
+            this.btnPdf.Text = "toolStripButton1";
+            this.btnPdf.Click += new System.EventHandler(this.btnPdf_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 49);
             // 
             // labelTipoCadastro
             // 
             this.labelTipoCadastro.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.labelTipoCadastro.Name = "labelTipoCadastro";
-            this.labelTipoCadastro.Size = new System.Drawing.Size(90, 44);
+            this.labelTipoCadastro.Size = new System.Drawing.Size(90, 46);
             this.labelTipoCadastro.Text = "[tipoCadastro]";
             // 
             // statusStrip1
@@ -184,9 +200,9 @@
             // 
             this.panelRegistros.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRegistros.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panelRegistros.Location = new System.Drawing.Point(0, 71);
+            this.panelRegistros.Location = new System.Drawing.Point(0, 73);
             this.panelRegistros.Name = "panelRegistros";
-            this.panelRegistros.Size = new System.Drawing.Size(839, 404);
+            this.panelRegistros.Size = new System.Drawing.Size(839, 402);
             this.panelRegistros.TabIndex = 3;
             this.panelRegistros.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRegistros_Paint);
             // 
@@ -261,12 +277,13 @@
         private System.Windows.Forms.ToolStripMenuItem testesMenuItem;
         private System.Windows.Forms.ToolStripMenuItem materiaMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton btnAdicionarItens;
-        private System.Windows.Forms.ToolStripButton btnAtualizarItens;
+        private System.Windows.Forms.ToolStripButton btnAdicionarQuestao;
+        private System.Windows.Forms.ToolStripButton btnAtualizarQuestao;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripLabel labelTipoCadastro;
         private System.Windows.Forms.ToolStripStatusLabel labelRodape;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton btnPdf;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton btnDuplicar;
     }
 }

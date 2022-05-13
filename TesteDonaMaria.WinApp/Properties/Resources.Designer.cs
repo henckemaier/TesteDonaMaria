@@ -73,6 +73,16 @@ namespace TesteDonaMaria.WinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_duplicata_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-duplicata-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_pdf_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-pdf-30", resourceCulture);

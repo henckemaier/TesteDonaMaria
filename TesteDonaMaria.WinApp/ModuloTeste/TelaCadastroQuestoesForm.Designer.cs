@@ -37,13 +37,13 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGravar = new System.Windows.Forms.Button();
             this.btnAdicionar = new System.Windows.Forms.Button();
-            this.listBoxQuestoes = new System.Windows.Forms.ListBox();
+            this.listQuestoes = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 15);
+            this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 15);
             this.label1.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             this.cmbBimestre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBimestre.FormattingEnabled = true;
-            this.cmbBimestre.Location = new System.Drawing.Point(74, 12);
+            this.cmbBimestre.Location = new System.Drawing.Point(74, 17);
             this.cmbBimestre.Name = "cmbBimestre";
             this.cmbBimestre.Size = new System.Drawing.Size(61, 23);
             this.cmbBimestre.TabIndex = 11;
@@ -61,7 +61,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 41);
+            this.label2.Location = new System.Drawing.Point(13, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 12;
@@ -70,7 +70,7 @@
             // Gabarito
             // 
             this.Gabarito.AutoSize = true;
-            this.Gabarito.Location = new System.Drawing.Point(13, 100);
+            this.Gabarito.Location = new System.Drawing.Point(13, 105);
             this.Gabarito.Name = "Gabarito";
             this.Gabarito.Size = new System.Drawing.Size(55, 15);
             this.Gabarito.TabIndex = 13;
@@ -78,7 +78,7 @@
             // 
             // txtPergunta
             // 
-            this.txtPergunta.Location = new System.Drawing.Point(74, 41);
+            this.txtPergunta.Location = new System.Drawing.Point(74, 46);
             this.txtPergunta.Name = "txtPergunta";
             this.txtPergunta.Size = new System.Drawing.Size(333, 53);
             this.txtPergunta.TabIndex = 14;
@@ -86,7 +86,7 @@
             // 
             // txtGabarito
             // 
-            this.txtGabarito.Location = new System.Drawing.Point(73, 100);
+            this.txtGabarito.Location = new System.Drawing.Point(73, 105);
             this.txtGabarito.Name = "txtGabarito";
             this.txtGabarito.Size = new System.Drawing.Size(333, 83);
             this.txtGabarito.TabIndex = 15;
@@ -115,28 +115,29 @@
             // btnAdicionar
             // 
             this.btnAdicionar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnAdicionar.Location = new System.Drawing.Point(334, 189);
+            this.btnAdicionar.Location = new System.Drawing.Point(334, 194);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(72, 31);
             this.btnAdicionar.TabIndex = 18;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
-            // listBoxQuestoes
+            // listQuestoes
             // 
-            this.listBoxQuestoes.FormattingEnabled = true;
-            this.listBoxQuestoes.ItemHeight = 15;
-            this.listBoxQuestoes.Location = new System.Drawing.Point(13, 249);
-            this.listBoxQuestoes.Name = "listBoxQuestoes";
-            this.listBoxQuestoes.Size = new System.Drawing.Size(394, 139);
-            this.listBoxQuestoes.TabIndex = 19;
+            this.listQuestoes.FormattingEnabled = true;
+            this.listQuestoes.ItemHeight = 15;
+            this.listQuestoes.Location = new System.Drawing.Point(13, 249);
+            this.listQuestoes.Name = "listQuestoes";
+            this.listQuestoes.Size = new System.Drawing.Size(394, 139);
+            this.listQuestoes.TabIndex = 19;
             // 
             // TelaCadastroQuestoesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(416, 440);
-            this.Controls.Add(this.listBoxQuestoes);
+            this.Controls.Add(this.listQuestoes);
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGravar);
@@ -164,6 +165,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Button btnAdicionar;
-        private System.Windows.Forms.ListBox listBoxQuestoes;
+        private System.Windows.Forms.ListBox listQuestoes;
     }
 }

@@ -16,8 +16,16 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
 
         public override string TooltipAtualizarItens => "Atualizar uma Lista de Questões";
 
+        public override string TooltipDuplicar => "Duplicar um Teste";
+
+        public override string TooltipPdf => "Gerar PDF de um Teste";
+
         public override bool AdicionarItensHabilitado => true;
 
         public override bool AtualizarItensHabilitado => true;
+
+        public override bool DuplicarHabilitado => true;
+
+        public override bool PdfHabilitado => true;
     }
 }

@@ -10,6 +10,8 @@ namespace TesteDonaMaria.Dominio.ModuloTeste
 {
     public class Teste : EntidadeBase<Teste>
     {
+        private List<TesteQuestoes> questoes = new List<TesteQuestoes>();
+
         public Teste()
         {
             DataCriacao = DateTime.Now;
@@ -24,6 +26,8 @@ namespace TesteDonaMaria.Dominio.ModuloTeste
         public DateTime DataCriacao { get; set; }
         public Materia Materia { get; set; }
         public int NumQuestoes { get; set; }
+
+        public List<TesteQuestoes> Questoes { get { return questoes; } }
 
 
         public override string ToString() //string?

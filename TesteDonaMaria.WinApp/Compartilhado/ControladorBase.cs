@@ -8,13 +8,17 @@ namespace TesteDonaMaria.WinApp.Compartilhado
         public abstract void Editar();
         public abstract void Excluir();
 
-        public virtual void AdicionarItens() { }
+        public virtual void AdicionarQuestao() { }
 
-        public virtual void AtualizarItens() { }
+        public virtual void AtualizarQuestao() { }
 
         public virtual void Filtrar() { }
 
         public virtual void Agrupar() { }
+
+        public virtual void Duplicar() { }
+
+        public virtual void GerarPdf() { }
 
         public abstract UserControl ObtemListagem();
 
