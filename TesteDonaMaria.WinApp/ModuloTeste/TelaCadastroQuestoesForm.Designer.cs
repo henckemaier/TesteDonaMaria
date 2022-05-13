@@ -55,7 +55,7 @@
             this.cmbBimestre.FormattingEnabled = true;
             this.cmbBimestre.Location = new System.Drawing.Point(74, 17);
             this.cmbBimestre.Name = "cmbBimestre";
-            this.cmbBimestre.Size = new System.Drawing.Size(61, 23);
+            this.cmbBimestre.Size = new System.Drawing.Size(90, 23);
             this.cmbBimestre.TabIndex = 11;
             // 
             // label2

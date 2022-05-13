@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace TesteDonaMaria.Dominio.ModuloTeste
 {
-    public enum BimestreTesteEnum : int
+    public enum BimestreTesteEnum
     {
-        Primeiro = 0,
-        Segundo = 1,
-        Terceiro = 2,
-        Quarto = 3,
+        Primeiro,
+        Segundo,
+        Terceiro,
+        Quarto
     }
 }

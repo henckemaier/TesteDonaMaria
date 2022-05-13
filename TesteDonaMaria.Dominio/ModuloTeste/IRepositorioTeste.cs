@@ -9,5 +9,7 @@ namespace TesteDonaMaria.Dominio.ModuloTeste
 {
     public interface IRepositorioTeste : IRepositorio<Teste>
     {
+        void AdicionarQuestoes(Teste testeSelecionado, List<TesteQuestoes> itens);
+
     }
 }

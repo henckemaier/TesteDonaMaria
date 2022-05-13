@@ -23,6 +23,12 @@ namespace TesteDonaMaria.Dominio.ModuloTeste
             Materia = materia;
         }
 
+        public void AdicionarQuestao(TesteQuestoes item)
+        {
+            if (Questoes.Exists(x => x.Equals(item)) == false)
+                questoes.Add(item);
+        }
+
         public DateTime DataCriacao { get; set; }
         public Materia Materia { get; set; }
         public int NumQuestoes { get; set; }

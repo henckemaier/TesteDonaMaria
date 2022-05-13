@@ -14,6 +14,14 @@ namespace TesteDonaMaria.Infra.Arquivos.ModuloTeste
         {
         }
 
+        public void AdicionarQuestoes(Teste testeSelecionado, List<TesteQuestoes> itens)
+        {
+            foreach (var item in itens)
+            {
+                testeSelecionado.AdicionarQuestao(item);
+            }
+        }
+
         public override List<Teste> ObterRegistros()
         {
             return dataContext.Testes;

@@ -18,12 +18,26 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
         {
             InitializeComponent();
 
+            CarregarBimestre();
+
             this.teste = teste;
 
             foreach (TesteQuestoes item in teste.Questoes)
             {
                 listQuestoes.Items.Add(item);
             }
+        }
+
+        private void CarregarBimestre()
+        {
+            var bimestre = Enum.GetValues(typeof(BimestreTesteEnum));
+
+            foreach (var item in bimestre)
+            {
+                cmbBimestre.Items.Add(item);
+            }
+
+            cmbBimestre.SelectedItem = BimestreTesteEnum.Primeiro;
         }
 
         public List<TesteQuestoes> QuestoesAdicionadas
@@ -50,5 +64,6 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
 
                 listQuestoes.Items.Add(testeQuestoes);
             }
+        }
     }
 }

@@ -103,7 +103,11 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
 
             if (tela.ShowDialog() == DialogResult.OK)
             {
-                //terminar
+                List<TesteQuestoes> itens = tela.QuestoesAdicionadas;
+
+                repositorioTeste.AdicionarQuestoes(testeSelecionado, itens);
+
+                CarregarTestes();
             }
         }
 
