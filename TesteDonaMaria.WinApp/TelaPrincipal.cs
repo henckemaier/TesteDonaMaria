@@ -95,6 +95,7 @@ namespace TesteDonaMaria.WinApp
         {
             controlador.AtualizarQuestao();
         }
+
         private void btnDuplicar_Click(object sender, EventArgs e)
         {
             controlador.Duplicar();

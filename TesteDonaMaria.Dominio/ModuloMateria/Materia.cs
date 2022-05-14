@@ -1,7 +1,9 @@
-﻿using TesteDonaMaria.Dominio.Compartilhado;
+﻿using System;
+using TesteDonaMaria.Dominio.Compartilhado;
 
 namespace TesteDonaMaria.Dominio.ModuloMateria
 {
+    [Serializable]
     public class Materia : EntidadeBase<Materia>
     {
         public Materia()

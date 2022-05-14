@@ -13,6 +13,7 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
 {
     public partial class TelaCadastroQuestoesForm : Form
     {
+        private readonly IRepositorioTeste repositorioTeste;
         private readonly Teste teste;
         public TelaCadastroQuestoesForm(Teste teste)
         {
@@ -67,6 +68,25 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
                 listQuestoes.Items.Add(testeQuestoes);
             }
         }
+        private void btnExcluirQuestao_Click(object sender, EventArgs e)
+        {
+            TesteQuestoes questaoSelecionada = (TesteQuestoes)listQuestoes.SelectedItem;
+
+            if (questaoSelecionada == null)
+            {
+                MessageBox.Show("Selecione uma Questão primeiro",
+                "Exclusão de Questão", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            DialogResult resultado = MessageBox.Show("Deseja realmente excluir a Questão?",
+                "Exclusão de Questão", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.OK)
+            {
+                listQuestoes.Items.Remove(questaoSelecionada);
+            }
+        }
 
         private void listQuestoes_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -77,5 +97,6 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
         {
 
         }
+
     }
 }

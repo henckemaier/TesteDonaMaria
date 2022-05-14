@@ -41,13 +41,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtLetra = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnExcluirQuestao = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(252, 20);
+            this.label1.Location = new System.Drawing.Point(318, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 15);
             this.label1.TabIndex = 0;
@@ -57,7 +58,7 @@
             // 
             this.cmbBimestre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBimestre.FormattingEnabled = true;
-            this.cmbBimestre.Location = new System.Drawing.Point(314, 17);
+            this.cmbBimestre.Location = new System.Drawing.Point(380, 17);
             this.cmbBimestre.Name = "cmbBimestre";
             this.cmbBimestre.Size = new System.Drawing.Size(112, 23);
             this.cmbBimestre.TabIndex = 11;
@@ -84,7 +85,7 @@
             // 
             this.txtPergunta.Location = new System.Drawing.Point(73, 53);
             this.txtPergunta.Name = "txtPergunta";
-            this.txtPergunta.Size = new System.Drawing.Size(352, 53);
+            this.txtPergunta.Size = new System.Drawing.Size(419, 53);
             this.txtPergunta.TabIndex = 14;
             this.txtPergunta.Text = "";
             // 
@@ -92,14 +93,14 @@
             // 
             this.txtGabarito.Location = new System.Drawing.Point(73, 115);
             this.txtGabarito.Name = "txtGabarito";
-            this.txtGabarito.Size = new System.Drawing.Size(353, 83);
+            this.txtGabarito.Size = new System.Drawing.Size(419, 83);
             this.txtGabarito.TabIndex = 15;
             this.txtGabarito.Text = "";
             // 
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(354, 420);
+            this.btnCancelar.Location = new System.Drawing.Point(420, 447);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(72, 39);
             this.btnCancelar.TabIndex = 17;
@@ -109,7 +110,7 @@
             // btnGravar
             // 
             this.btnGravar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnGravar.Location = new System.Drawing.Point(276, 420);
+            this.btnGravar.Location = new System.Drawing.Point(342, 447);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(72, 39);
             this.btnGravar.TabIndex = 16;
@@ -119,7 +120,7 @@
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.Location = new System.Drawing.Point(354, 204);
+            this.btnAdicionar.Location = new System.Drawing.Point(420, 204);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(72, 31);
             this.btnAdicionar.TabIndex = 18;
@@ -158,19 +159,33 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.btnExcluirQuestao);
             this.groupBox1.Controls.Add(this.listQuestoes);
             this.groupBox1.Location = new System.Drawing.Point(13, 241);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(413, 173);
+            this.groupBox1.Size = new System.Drawing.Size(479, 173);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lista de Questões";
+            // 
+            // btnExcluirQuestao
+            // 
+            this.btnExcluirQuestao.BackColor = System.Drawing.SystemColors.Control;
+            this.btnExcluirQuestao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnExcluirQuestao.Image = global::TesteDonaMaria.WinApp.Properties.Resources.outline_delete_black_24dp;
+            this.btnExcluirQuestao.Location = new System.Drawing.Point(413, 59);
+            this.btnExcluirQuestao.Margin = new System.Windows.Forms.Padding(5);
+            this.btnExcluirQuestao.Name = "btnExcluirQuestao";
+            this.btnExcluirQuestao.Size = new System.Drawing.Size(60, 57);
+            this.btnExcluirQuestao.TabIndex = 20;
+            this.btnExcluirQuestao.UseVisualStyleBackColor = false;
+            this.btnExcluirQuestao.Click += new System.EventHandler(this.btnExcluirQuestao_Click);
             // 
             // TelaCadastroQuestoesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 471);
+            this.ClientSize = new System.Drawing.Size(504, 498);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtLetra);
             this.Controls.Add(this.label3);
@@ -211,5 +226,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtLetra;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnExcluirQuestao;
     }
 }

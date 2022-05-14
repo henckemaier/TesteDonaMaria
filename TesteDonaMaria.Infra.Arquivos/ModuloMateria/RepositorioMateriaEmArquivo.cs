@@ -12,6 +12,8 @@ namespace TesteDonaMaria.Infra.Arquivos.ModuloMateria
     {
         public RepositorioMateriaEmArquivo(DataContext dataContext) : base(dataContext)
         {
+            if (dataContext.Materias.Count > 0)
+                contador = dataContext.Materias.Max(x => x.Numero);
         }
 
         public override List<Materia> ObterRegistros()

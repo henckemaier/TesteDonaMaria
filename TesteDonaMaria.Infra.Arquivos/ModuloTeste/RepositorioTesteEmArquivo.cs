@@ -12,6 +12,8 @@ namespace TesteDonaMaria.Infra.Arquivos.ModuloTeste
     {
         public RepositorioTesteEmArquivo(DataContext dataContext) : base(dataContext)
         {
+            if (dataContext.Testes.Count > 0)
+                contador = dataContext.Testes.Max(x => x.Numero);
         }
 
         public void AdicionarQuestoes(Teste testeSelecionado, List<TesteQuestoes> itens)

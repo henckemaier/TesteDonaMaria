@@ -23,6 +23,8 @@ namespace TesteDonaMaria.WinApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new TelaPrincipal(contexto));
+
+            contexto.GravarDados();
         }
 
         private static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)

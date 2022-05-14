@@ -109,7 +109,7 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
 
                 CarregarTestes();               
             }
-        }
+        }      
 
         public override void Duplicar()
         {

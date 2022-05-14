@@ -8,6 +8,7 @@ using TesteDonaMaria.Dominio.ModuloMateria;
 
 namespace TesteDonaMaria.Dominio.ModuloTeste
 {
+    [Serializable]
     public class Teste : EntidadeBase<Teste>
     {
         private List<TesteQuestoes> questoes = new List<TesteQuestoes>();

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TesteDonaMaria.Dominio.ModuloTeste
 {
+    [Serializable]
     public class TesteQuestoes
     {
         public BimestreTesteEnum Bimestre { get; set; }
