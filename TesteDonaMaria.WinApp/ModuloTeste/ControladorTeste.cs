@@ -1,5 +1,8 @@
-﻿using System;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +18,9 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
     {
         private readonly IRepositorioTeste repositorioTeste;
         private readonly IRepositorioMateria repositorioMateria;
+        private readonly Teste teste;
+        private readonly Materia materia;
+        private readonly TesteQuestoes testeQuestoes;
 
         private ListagemTesteControl listagemTestes;
 
@@ -136,6 +142,49 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
             {
                 CarregarTestes();
             }
+        }
+
+        public override void GerarPdf()
+        {
+            Teste testeSelecionado = ObtemTesteSelecionado();
+
+            if (testeSelecionado == null)
+            {
+                MessageBox.Show("Selecione um Teste primeiro",
+                "Duplicação de Teste", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            Document doc = new Document(PageSize.A4);
+            doc.SetMargins(40, 40, 40, 80);
+            string caminho = @"C:\pdf\" + "relatorio.pdf";
+
+            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(caminho, FileMode.Create));
+
+            doc.Open();
+
+            Paragraph titulo = new Paragraph();
+            titulo.Font = new Font(Font.FontFamily.COURIER, 40);
+            titulo.Alignment = Element.ALIGN_CENTER;
+            titulo.Add("Teste\n\n");
+            doc.Add(titulo);
+
+            Paragraph paragrafo = new Paragraph("", new Font(Font.NORMAL, 12));
+            string conteudo = $"Matéria: {teste.Materia}, Data: {teste.DataCriacao}";
+            paragrafo.Add(conteudo);
+            doc.Add(paragrafo);
+
+            PdfPTable table = new PdfPTable(2);
+
+            for (int i = 0; i <= teste.NumQuestoes; i++)
+            {
+                table.AddCell($"{testeQuestoes.Pergunta}");
+                table.AddCell($"Resposta: ");
+            }
+            doc.Add(table);
+
+            doc.Close();
+            System.Diagnostics.Process.Start(caminho);
         }
 
         public override ConfiguracaoToolboxBase ObtemConfiguracaoToolbox()
