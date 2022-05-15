@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentValidation.Results;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,9 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
     {
         private readonly IRepositorioTeste repositorioTeste;
         private readonly Teste teste;
+
+        public Func<TesteQuestoes, ValidationResult> GravarRegistro { get; set; }
+
         public TelaCadastroQuestoesForm(Teste teste)
         {
             InitializeComponent();
@@ -52,6 +56,7 @@ namespace TesteDonaMaria.WinApp.ModuloTeste
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
             List<string> questoes = QuestoesAdicionadas.Select(x => x.Pergunta).ToList();
+         
 
             if (questoes.Count == 0 || questoes.Contains(txtPergunta.Text) == false)
             {

@@ -34,7 +34,6 @@
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnAdicionarQuestao = new System.Windows.Forms.ToolStripButton();
-            this.btnAtualizarQuestao = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnDuplicar = new System.Windows.Forms.ToolStripButton();
             this.btnPdf = new System.Windows.Forms.ToolStripButton();
@@ -61,7 +60,6 @@
             this.btnExcluir,
             this.toolStripSeparator1,
             this.btnAdicionarQuestao,
-            this.btnAtualizarQuestao,
             this.toolStripSeparator2,
             this.btnDuplicar,
             this.btnPdf,
@@ -126,18 +124,6 @@
             this.btnAdicionarQuestao.Size = new System.Drawing.Size(38, 46);
             this.btnAdicionarQuestao.Text = "toolStripButton1";
             this.btnAdicionarQuestao.Click += new System.EventHandler(this.btnAdicionarQuestao_Click);
-            // 
-            // btnAtualizarQuestao
-            // 
-            this.btnAtualizarQuestao.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnAtualizarQuestao.Image = global::TesteDonaMaria.WinApp.Properties.Resources.outline_table_rows_black_24dp;
-            this.btnAtualizarQuestao.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnAtualizarQuestao.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAtualizarQuestao.Name = "btnAtualizarQuestao";
-            this.btnAtualizarQuestao.Padding = new System.Windows.Forms.Padding(5);
-            this.btnAtualizarQuestao.Size = new System.Drawing.Size(38, 46);
-            this.btnAtualizarQuestao.Text = "toolStripButton2";
-            this.btnAtualizarQuestao.Click += new System.EventHandler(this.btnAtualizarQuestao_Click);
             // 
             // toolStripSeparator2
             // 
@@ -278,7 +264,6 @@
         private System.Windows.Forms.ToolStripMenuItem materiaMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btnAdicionarQuestao;
-        private System.Windows.Forms.ToolStripButton btnAtualizarQuestao;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripLabel labelTipoCadastro;
         private System.Windows.Forms.ToolStripStatusLabel labelRodape;

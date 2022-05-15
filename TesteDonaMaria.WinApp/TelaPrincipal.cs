@@ -91,10 +91,6 @@ namespace TesteDonaMaria.WinApp
         {
             controlador.AdicionarQuestao();
         }
-        private void btnAtualizarQuestao_Click(object sender, EventArgs e)
-        {
-            controlador.AtualizarQuestao();
-        }
 
         private void btnDuplicar_Click(object sender, EventArgs e)
         {
@@ -151,7 +147,6 @@ namespace TesteDonaMaria.WinApp
             btnEditar.Enabled = configuracao.EditarHabilitado;
             btnExcluir.Enabled = configuracao.ExcluirHabilitado;
             btnAdicionarQuestao.Enabled = configuracao.AdicionarItensHabilitado;
-            btnAtualizarQuestao.Enabled = configuracao.AtualizarItensHabilitado;
             btnDuplicar.Enabled = configuracao.DuplicarHabilitado;
             btnPdf.Enabled = configuracao.PdfHabilitado;
         }
@@ -162,7 +157,6 @@ namespace TesteDonaMaria.WinApp
             btnEditar.ToolTipText = configuracao.TooltipEditar;
             btnExcluir.ToolTipText = configuracao.TooltipExcluir;
             btnAdicionarQuestao.ToolTipText = configuracao.TooltipAdicionarItens;
-            btnAtualizarQuestao.ToolTipText = configuracao.TooltipAtualizarItens;
             btnDuplicar.ToolTipText = configuracao.TooltipDuplicar;
             btnPdf.ToolTipText = configuracao.TooltipPdf;
         }
