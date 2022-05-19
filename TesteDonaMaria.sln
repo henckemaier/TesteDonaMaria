@@ -13,7 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteDonaMaria.Dominio", "TesteDonaMaria.Dominio\TesteDonaMaria.Dominio.csproj", "{1C4A4F5E-FA7A-492D-9EBD-69D81E03C8D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteDonaMaria.Infra.Arquivos", "TesteDonaMaria.Infra.Arquivos\TesteDonaMaria.Infra.Arquivos.csproj", "{C12E615A-E352-40A5-81A2-374EAD72D885}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteDonaMaria.Infra.Arquivos", "TesteDonaMaria.Infra.Arquivos\TesteDonaMaria.Infra.Arquivos.csproj", "{C12E615A-E352-40A5-81A2-374EAD72D885}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arquivos", "Arquivos", "{23EDA40B-ABEE-4D74-8099-69A37FA7C1E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Banco de Dados", "Banco de Dados", "{2B63D6AE-1364-4D73-AA92-B4C840613A65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteDonaMaria.Infra.BancoDados", "TesteDonaMaria.Infra.BancoDados\TesteDonaMaria.Infra.BancoDados.csproj", "{E1944AD1-E421-414A-9C22-73E2E8C3806F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteDonaMaria.ConsoleApp", "TesteDonaMaria.ConsoleApp\TesteDonaMaria.ConsoleApp.csproj", "{05D45E05-A066-404B-9943-3B3F94AA2598}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,14 @@ Global
 		{C12E615A-E352-40A5-81A2-374EAD72D885}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C12E615A-E352-40A5-81A2-374EAD72D885}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C12E615A-E352-40A5-81A2-374EAD72D885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1944AD1-E421-414A-9C22-73E2E8C3806F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1944AD1-E421-414A-9C22-73E2E8C3806F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1944AD1-E421-414A-9C22-73E2E8C3806F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1944AD1-E421-414A-9C22-73E2E8C3806F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D45E05-A066-404B-9943-3B3F94AA2598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D45E05-A066-404B-9943-3B3F94AA2598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D45E05-A066-404B-9943-3B3F94AA2598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D45E05-A066-404B-9943-3B3F94AA2598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,7 +56,11 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0666144C-E6FB-4149-B47B-3A4551DF8AE0} = {7FB2B29F-A93F-464D-91E5-C025041E94E1}
 		{1C4A4F5E-FA7A-492D-9EBD-69D81E03C8D6} = {E7653DB8-DFB4-4987-9D1A-B3B7D6A99EBE}
-		{C12E615A-E352-40A5-81A2-374EAD72D885} = {F64E4366-E5BB-47AF-A289-FA12FA35AF01}
+		{C12E615A-E352-40A5-81A2-374EAD72D885} = {23EDA40B-ABEE-4D74-8099-69A37FA7C1E5}
+		{23EDA40B-ABEE-4D74-8099-69A37FA7C1E5} = {F64E4366-E5BB-47AF-A289-FA12FA35AF01}
+		{2B63D6AE-1364-4D73-AA92-B4C840613A65} = {F64E4366-E5BB-47AF-A289-FA12FA35AF01}
+		{E1944AD1-E421-414A-9C22-73E2E8C3806F} = {2B63D6AE-1364-4D73-AA92-B4C840613A65}
+		{05D45E05-A066-404B-9943-3B3F94AA2598} = {7FB2B29F-A93F-464D-91E5-C025041E94E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4CB650AC-CC3C-4330-B964-A9B2FA1832A2}
