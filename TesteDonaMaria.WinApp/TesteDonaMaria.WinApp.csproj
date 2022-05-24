@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TesteDonaMaria.Dominio\TesteDonaMaria.Dominio.csproj" />
     <ProjectReference Include="..\TesteDonaMaria.Infra.Arquivos\TesteDonaMaria.Infra.Arquivos.csproj" />
+    <ProjectReference Include="..\TesteDonaMaria.Infra.BancoDados\TesteDonaMaria.Infra.BancoDados.csproj" />
   </ItemGroup>
 
   <ItemGroup>

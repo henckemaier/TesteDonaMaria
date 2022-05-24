@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using TesteDonaMaria.Infra.Arquivos;
 using TesteDonaMaria.Infra.Arquivos.ModuloMateria;
 using TesteDonaMaria.Infra.Arquivos.ModuloTeste;
+using TesteDonaMaria.Infra.BancoDados.ModuloMateria;
 using TesteDonaMaria.WinApp.Compartilhado;
 using TesteDonaMaria.WinApp.ModuloMateria;
 using TesteDonaMaria.WinApp.ModuloTeste;
@@ -63,8 +64,9 @@ namespace TesteDonaMaria.WinApp
 
         private void InicializarControladores()
         {
+            var repositorioMateria = new RepositorioMateriaEmBancoDados();
+
             var repositorioTeste = new RepositorioTesteEmArquivo(contextoDados);
-            var repositorioMateria = new RepositorioMateriaEmArquivo(contextoDados);
 
             controladores = new Dictionary<string, ControladorBase>();
 

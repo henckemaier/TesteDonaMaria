@@ -23,7 +23,7 @@ namespace TesteDonaMaria.ConsoleApp
 
             Materia materiaEncontrada = SelecionarMateriaPorNumero(numero);
 
-            var materia = ObterMateria();
+            var materia = ObterMateria("Alguma matéria ai");
 
             InserirMateria(materia);
 
@@ -294,11 +294,11 @@ namespace TesteDonaMaria.ConsoleApp
             conexaoComBanco.Close();
         }
 
-        private static Materia ObterMateria()
+        private static Materia ObterMateria(string nomeMateria)
         {
             return new Materia
             {
-                NomeMateria = "Algebra",
+                NomeMateria = nomeMateria,
                 Disciplina = (MateriaDisciplinaEnum)0,
                 Serie = (SerieMateriaEnum)1
             };
