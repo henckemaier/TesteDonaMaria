@@ -28,7 +28,7 @@ namespace TesteDonaMaria.Infra.BancoDados.ModuloMateria
 	        VALUES
             (
                 @NOMEMATERIA,
-                @DISCIPLIA,
+                @DISCIPLINA,
                 @SERIE
             );SELECT SCOPE_IDENTITY();";
 
@@ -200,7 +200,7 @@ namespace TesteDonaMaria.Infra.BancoDados.ModuloMateria
         {
             comando.Parameters.AddWithValue("NUMERO", novaMateria.Numero);
             comando.Parameters.AddWithValue("NOMEMATERIA", novaMateria.NomeMateria);
-            comando.Parameters.AddWithValue("DISCIPLIA", novaMateria.Disciplina);
+            comando.Parameters.AddWithValue("DISCIPLINA", novaMateria.Disciplina);
             comando.Parameters.AddWithValue("SERIE", novaMateria.Serie);
         }
     }

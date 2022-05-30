@@ -9,6 +9,8 @@ namespace TesteDonaMaria.Dominio.ModuloTeste
     [Serializable]
     public class TesteQuestoes
     {
+        public int Numero { get; set; }
+
         public BimestreTesteEnum Bimestre { get; set; }
 
         public string Pergunta {  get; set; }
@@ -16,6 +18,8 @@ namespace TesteDonaMaria.Dominio.ModuloTeste
         public string Gabarito { get; set; }
 
         public string Letra { get; set; }
+
+        public Teste Teste { get; set; }
 
         public override string ToString()
         {
